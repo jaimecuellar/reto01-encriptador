@@ -33,8 +33,8 @@ Las "llaves" de encriptación que se utilizan son las siguientes:
 - La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 - El resultado debe ser mostrado en la pantalla.
 
-## Créditos
-
+## Contacto
+* Para contrctarme o saber más de mi: https://app.aluracursos.com/user/jaimeacuellars
 
 ### Ver página
 
