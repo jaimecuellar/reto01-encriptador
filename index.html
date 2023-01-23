@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador/Desencriptador</title>    
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>       
+        <header>           
+            <div class="logo-alura">
+                <img src="img/alura_a_Vector.png" class="alura-a-logo">
+            </div>
+            <div class="titulos-pagina">
+                <h2 class="titulo-principal">Encriptador/desencriptador con HTML, CSS y JavaScript</h2>
+                <img class="alura-challenges-logo"  src="img/alura_challenges.png" alt="Alura Challenges logo">
+            </div>                       
+        </header>
+               
+        <main>
+            <section class="caja-entrada"> 
+
+                <textarea type="text" rows="20%" id="textoEntrada" class="texto-entrada" required placeholder="Ingrese texto aqui..."></textarea>
+
+                <p class="nota"><em> ⚠ Nota: <strong>Sólo aplica para minúsculas sin acentos</strong>.</em></p>               
+
+                <div class="botones-encripta-desencripta">
+                    <button type="button" id="btn-encriptar" onclick="encriptar" class="btn-encript">Encriptar</button>
+                    <button type="button" id="btn-desencriptar" onclick="desencriptar" class="btn-desencript">Desencriptar</button>
+                </div>
+
+                
+            </section>
+            
+            <section class="caja-resultado">
+
+                <textarea type="text" rows="20%" id="textoResultado" class="texto-resultado" required placeholder="No hay texto para procesar."></textarea>
+
+                <div class="boton-copiado">
+                    <button type="button" id="btn-copiar" onclick="copiar" class="btn-copia">Copiar</button>
+                </div>
+
+            </section>                       
+        </main>
+
+        <footer>
+            <div class="logos-footer">
+                <img src="img/ONE-logo-color.png" alt="Logo OracleONE a color">
+                <img src="img/oracle+alura.png" alt="logos Oracle y Alura Latam">
+            </div>
+            <div class="texto-footer">
+                <p class="copyright">&copy 2023 - Jaime A. Cuéllar S.</p>
+                <div class="iconos-contacto">
+                    <a href="https://github.com/jaimecuellar/encriptadorChallengeOracleAlura" target="_blank"><img src="img/logoGithub.png" alt="logo GitHub"></a>
+                    <a href="https://www.linkedin.com/in/jaimeacuellars/" target="_blank"><img src="img/logoLinkedin.png" alt="logo Linkedin"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
