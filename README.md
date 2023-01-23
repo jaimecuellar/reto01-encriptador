@@ -34,7 +34,7 @@ Las "llaves" de encriptación que se utilizan son las siguientes:
 - El resultado debe ser mostrado en la pantalla.
 
 ## Contacto
-* Para contrctarme o saber más de mi: https://app.aluracursos.com/user/jaimeacuellars
+* Para contrctarme o saber más de mi: [Linkedin](https://www.linkedin.com/in/jaimeacuellars/)
 
 ### Ver página
 
