@@ -34,7 +34,7 @@ Las "llaves" de encriptación que se utilizan son las siguientes:
 - El resultado debe ser mostrado en la pantalla.
 
 ## Contacto
-* Para contrctarme o saber más de mi: [Linkedin](https://www.linkedin.com/in/jaimeacuellars/)
+* Para contactarme o saber más de mi: [Linkedin](https://www.linkedin.com/in/jaimeacuellars/)
 
 ### <a href="https://jaimecuellar.github.io/reto01-encriptador/" target="_blank">Ver página resultado</a>
 
