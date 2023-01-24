@@ -25,13 +25,13 @@
         <main>
             <section class="caja-entrada"> 
 
-                <textarea type="text" rows="20%" id="textoEntrada" class="texto-entrada" placeholder="Ingrese texto aqui..."></textarea>
+                <textarea rows="20%" class="texto-entrada" placeholder="Ingrese texto aqui..."></textarea>
 
                 <p class="nota"><em> ⚠ Nota: <strong>Sólo aplica para minúsculas sin acentos</strong>.</em></p>               
 
                 <div class="botones-encripta-desencripta">
-                    <button type="button" onclick="encriptar" class="btn-encript">Encriptar</button>
-                    <button type="button" onclick="desencriptar" class="btn-desencript">Desencriptar</button>
+                    <button class="btn-encript" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencript" onclick="btnDesencriptar()" >Desencriptar</button>
                 </div>
 
                 
@@ -39,10 +39,10 @@
             
             <section class="caja-resultado">
 
-                <textarea type="text" rows="20%" class="texto-resultado" placeholder="No hay texto para procesar."></textarea>
+                <textarea rows="20%" id="textoCopiar" class="texto-resultado" placeholder="No hay texto para procesar."></textarea>
                 
                 <div class="boton-copiado">
-                    <button type="button" onclick="copiar" class="btn-copia">Copiar</button>
+                    <button onclick="btnCopiar()" class="btn-copia">Copiar</button>
                 </div>
 
             </section>                       
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </footer>
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
 
