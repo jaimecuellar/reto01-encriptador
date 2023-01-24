@@ -36,5 +36,5 @@ Las "llaves" de encriptación que se utilizan son las siguientes:
 ## Contacto
 * Para contrctarme o saber más de mi: [Linkedin](https://www.linkedin.com/in/jaimeacuellars/)
 
-### [Ver página resultado] <a href="https://jaimecuellar.github.io/reto01-encriptador/" target="_blank"></a>
+### <a href="https://jaimecuellar.github.io/reto01-encriptador/" target="_blank">Ver página resultado</a>
 
