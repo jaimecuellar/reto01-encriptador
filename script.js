@@ -23,6 +23,11 @@ function btnDesencriptar(){
 function encriptar(stringEncriptada){
     
     let llaveEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    
+    stringEncriptada = stringEncriptada.normalize("NFD").replace(/[\u0300-\u0301]/g, "");
+    
+    alert("Ahora se van a quitar los acentos de las vocales");
+
     stringEncriptada = stringEncriptada.toString().toLowerCase();
 
     for (let i = 0; i < llaveEncriptacion.length; i++) {
@@ -49,20 +54,13 @@ function desencriptar(stringDesencriptada){
 function btnCopiar() {
     
     let copiarTexto = document.getElementById("textoCopiar");
-    
-        copiarTexto.select();
-        copiarTexto.setSelectionRange(0, 99999);
-
-        navigator.clipboard.writeText(copiarTexto.value);
-      
-        alert("Texto copiado al portapapeles");
-
-        textoProcesado.value = "";
-
-        textoProcesado.style.backgroundImage = "url(img/notexto.png)";
-        
-        document.getElementsByClassName("btn-copia")[0].style.visibility = 'hidden';
-           
+    copiarTexto.select();
+    copiarTexto.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copiarTexto.value);
+    alert("Texto copiado al portapapeles");
+    textoProcesado.value = "";
+    textoProcesado.style.backgroundImage = "url(img/notexto.png)";
+    document.getElementsByClassName("btn-copia")[0].style.visibility = 'hidden';          
 }
      
 
