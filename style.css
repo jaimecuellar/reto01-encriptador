@@ -124,41 +124,53 @@ main{
     font-weight: bolder;
 }
 
-.caja-resultado, .texto-resultado, .boton-copiado{
-    background: white;
-}
-
 .caja-resultado{
+    background: white;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     margin: 5px;
     width: 30%;
     padding: 1em;    
-    border-radius: 15px;    
-    border: none;    
+    border-radius: 15px;
+    border: none;
     align-items: center;
-    justify-content: center;
     box-shadow: 0 5px 10px 5px lightgrey;
-    
 }
 
 .texto-resultado{
+    background: inherit;
     background-image: url(img/notexto.png);
     background-repeat: no-repeat;
     background-position: center;
     color: darkblue;
-    padding: 0.5em;
     width: 99%;
     border: none;
     border-radius: 5px;
-    margin-bottom: 1em;
-       
     font: inherit;
-    font-size: x-large;    
+    font-size: x-large;        
 }
 
-.texto-resultado::placeholder{ 
-    color: darkblue;
+.texto-no-ingresado {
+    display: flex;
+    width: 65%;
+    height: 3em;
+    flex-direction: column;
+    text-align: center;
+    align-content:space-between;
+    margin-bottom: 1em;
+    background: inherit;
+}
+
+.titulo-texto-no-ingresado {
+    font-size: large;
+    font-weight: bold;
+    background: inherit;
+}
+
+.subtitulo-texto-no-ingresado {
+    font-size: medium;
+    font-style: italic;
+    background: inherit;
 }
 
 .texto-entrada:focus, .texto-resultado:focus{
@@ -166,6 +178,7 @@ main{
 }
 
 .boton-copiado{
+    background: inherit;
     display: flex;
     width: 90%;    
 }
@@ -252,7 +265,6 @@ footer{
         align-self: center;
         width: 100%;        
     }
-
    
     .logos-footer{
         display: flex;

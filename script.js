@@ -1,12 +1,12 @@
 const textoIngresado = document.querySelector(".texto-entrada");
 const textoProcesado = document.querySelector(".texto-resultado");
 
-
 function btnEncriptar(){
     const textoEncriptado = encriptar(textoIngresado.value);
     textoProcesado.value = textoEncriptado;
     textoIngresado.value = "";
     textoProcesado.style.backgroundImage = "none";
+    document.getElementsByClassName("texto-no-ingresado")[0].style.visibility = 'hidden';
     document.getElementsByClassName("btn-copia")[0].style.visibility = 'visible';
 }
 
@@ -15,10 +15,18 @@ function btnDesencriptar(){
     textoProcesado.value = textoEncriptado;
     textoIngresado.value = "";
     textoProcesado.style.backgroundImage = "none";
+    document.getElementsByClassName("texto-no-ingresado")[0].style.visibility = 'hidden';
     document.getElementsByClassName("btn-copia")[0].style.visibility = 'visible';
 }
 
-
+/*
+Llaves de encriptacion:
+letra "e" = "enter"
+letra "i" = "imes"
+letra "a" = "ai"
+letra "o" = "ober"
+letra "u" = "ufat"
+*/
 
 function encriptar(stringEncriptada){
     
@@ -49,7 +57,6 @@ function desencriptar(stringDesencriptada){
     }
     return stringDesencriptada;
 }
-
    
 function btnCopiar() {
     
@@ -60,7 +67,7 @@ function btnCopiar() {
     alert("Texto copiado al portapapeles");
     textoProcesado.value = "";
     textoProcesado.style.backgroundImage = "url(img/notexto.png)";
-    document.getElementsByClassName("btn-copia")[0].style.visibility = 'hidden';          
-}
-     
+    document.getElementsByClassName("btn-copia")[0].style.visibility = 'hidden';
+    document.getElementsByClassName("texto-no-ingresado")[0].style.visibility = 'visible';         
+}    
 
